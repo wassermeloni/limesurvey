@@ -16,7 +16,7 @@ ADD run.sh /
 RUN chmod +x /start.sh && \
     chmod +x /run.sh
 
-ENV LIMESURVEY_VERSION="3.17.0+190402"
+ENV LIMESURVEY_VERSION="3.27.31+220104"
 
 RUN apt-get update -q -y && \
 	apt-get upgrade -q -y
