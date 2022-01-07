@@ -1,5 +1,5 @@
 
-FROM tutum/lamp
+FROM mattrayner/lamp:latest-1604-php5
 
 RUN apt-get update -q -y && \
 	apt-get upgrade -q -y && \
