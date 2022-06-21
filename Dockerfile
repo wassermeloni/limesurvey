@@ -5,7 +5,7 @@ RUN apt-get update -q -y && \
 	apt-get upgrade -q -y && \
 	apt-get install -q -y curl php-gd php-ldap php-imap sendmail php-pgsql php-curl && \
 	apt-get clean && \
-	php7enmod imap
+	phpenmod imap
 
 RUN chown www-data:www-data /var/lib/php7
 
