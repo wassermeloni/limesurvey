@@ -7,7 +7,7 @@ RUN apt-get update -q -y && \
 	apt-get clean && \
 	phpenmod imap
 
-RUN chown www-data:www-data /var/lib/php7
+RUN chown www-data:www-data /var/lib/php
 
 ADD apache_default /etc/apache2/sites-available/000-default.conf
 ADD start.sh /
